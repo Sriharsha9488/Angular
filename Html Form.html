@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Html Form</title>
+        </head>
+        <body>
+            <h1 style="text-align: center;color:blue;">HTML FORM</h1>
+            <form>
+                <label for = "Firstname">Firstname :</label>
+                <input type = "text" id = "Firstname" name = "Firstname" required><br><br>
+
+                <label for = "Lastname">Lastname :</label>
+                <input type = "text" id = "Lastname" name = "Lastname"><br><br>
+
+                <label for = "Password">Password :</label>
+                <input type = "password" id = "Password" name = "Password"><br><br>
+
+                <label for = "Confirm Password">Confirm Password :</label>
+                <input type = "password" id = "Confirm Password" name = "Confirm Password"><br><br>
+
+                <label for = "Phone Number">Phone Number :</label>
+                <input type = "number" id = "Phone Number" name = "Phone Number" 
+                    placeholder="1234-567-782" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}"><br><br>
+                
+                <label>Gender :</label><br>
+                &emsp;&emsp;<input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                &emsp;&emsp;<input type="radio" id="Female" name="gender" value="Female">
+                <label for="Female">Female</label><br><br>
+
+                <label for = "DOB">DOB :</label>
+                <input type="date" id ="DOB" name = "DOB"><br><br>
+
+                <label for="cars">Liked Game :</label>
+
+                <select id="Liked Games" name="Liked Game">
+                <option value="Football" selected>Football</option>
+                <option value="Cricket">Cricket</option>
+                <option value="Kabadi">Kabadi</option>
+                <option value="Hockey">Hockey</option>
+                </select><br><br>
+
+                <label for = "isActive">IsActive</label>
+                <input type = "checkbox" id = "isActive" name = "IsActive"><br><br>
+
+                <input type = "submit" id = "submit" name = "submit">
+
+                
+            </form>    
+
+          
+        </body>
+    </html>
