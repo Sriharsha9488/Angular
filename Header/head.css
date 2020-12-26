@@ -53,3 +53,7 @@ span{
     color: white;
     font-size: 15px;
 }
+
+span:hover{
+    color: rgb(137, 221, 137);
+}
