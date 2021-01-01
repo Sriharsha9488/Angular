@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ALL Example</title>
+
+        <style>
+            h1{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>All exercise</h1>
+
+        <script type = "text/javascript">
+        var array = ["siva"];
+        var user = {
+            name : "siva",
+            age : 24
+        };
+
+        if(array.length == 1){
+            console.log("array length is 1")
+        }
+        else if(array.length == 2){
+            console.log("array length is not 2")
+        }
+        else{
+            console.log("array length is not 1 or 2")
+        }
+
+        for(i = 0; i<10;i++){
+            if(i===6){
+                continue;
+            }
+            if(i===9){
+                break;
+            }
+            console.log(i);
+        }
+        var a = 10;
+        while(a > 0){
+            console.log(a)
+            a--;
+        }
+
+        var b = 10;
+
+        do{
+            console.log(b)
+            b--;
+        }
+        while(b>=0)
+
+        var c = 3
+        switch(c){
+            case 1:
+                console.log("number 1")
+            case 2:
+                console.log("number 2")
+            case 3:
+                console.log("number 3")
+            default:
+                console.log("null")
+        }
+
+        for(x in user){
+            console.log(user[x])
+        }
+        </script>
+
+
+
+    </body>
+            
+</html>
