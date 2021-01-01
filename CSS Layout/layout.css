@@ -1,0 +1,109 @@
+body{
+    font-style:inherit;
+}
+
+.top{
+    height: 50px;
+    color:rgb(105, 221, 105);
+    font-size: 30px;
+    padding: 20px 10px;
+    margin : 5px 10px;
+
+}
+
+.button{
+    float: right;
+    height: 25px;
+    width:7%;
+    color:white;
+    background-color: rgb(66, 170, 66);
+    font-size: 8px;
+    margin: 5px 10px;
+    font-weight: bold;
+}
+
+.world{
+    float: right;
+    height: 20px;
+    color:grey;
+    font-size: 15px;
+    margin: 10px 10px;
+
+}
+
+div.nav{
+    background-color: gray;
+    color : white;
+    padding: 10px 10px;
+    margin:10px;
+    position: sticky;
+}
+
+span{
+    font-size: 16px;
+    padding: 7px 7px;
+    
+}
+
+.float{
+    float: right;
+    padding: 0px 10px;
+}
+
+.horinav{
+    background-color: gray;
+    color: white;
+    font-size: 15px;
+}
+
+span:hover{
+    color: rgb(137, 221, 137);
+}
+li:hover{
+    color: rgb(137, 221, 137);
+}
+
+.leftnav{
+    width: 25%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: left;
+    font-style: italic;
+    background-color: lightgray;
+    height: 500px;
+    font-size: 20px;
+    overflow:auto;
+    list-style-type: none;
+    
+}
+
+right{
+    position: relative;
+    width: 25%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+    background-color: lightgray;
+    height: 500px;
+}
+
+
+
+li{
+    font-size: 15px;
+    margin: 5px;
+    color:black;
+}
+
+div.footer{
+
+    background-color: #777;
+  padding: 0px;
+  text-align: center;
+  color: white;
+  bottom:0px;
+  position:fixed;
+  width:100%;
+    
+}
