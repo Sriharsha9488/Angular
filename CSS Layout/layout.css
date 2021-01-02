@@ -6,19 +6,18 @@ body{
     height: 50px;
     color:rgb(105, 221, 105);
     font-size: 30px;
-    padding: 20px 10px;
-    margin : 5px 10px;
+    margin : 5px 5px;
 
 }
 
 .button{
     float: right;
     height: 25px;
-    width:7%;
+    width:10%;
     color:white;
     background-color: rgb(66, 170, 66);
-    font-size: 8px;
-    margin: 5px 10px;
+    font-size: 15px;
+    margin: 5px 5px;
     font-weight: bold;
 }
 
@@ -31,12 +30,13 @@ body{
 
 }
 
-div.nav{
+.nav{
     background-color: gray;
     color : white;
     padding: 10px 10px;
     margin:10px;
-    position: sticky;
+    text-align: center;
+    
 }
 
 span{
@@ -45,56 +45,23 @@ span{
     
 }
 
-.float{
-    float: right;
-    padding: 0px 10px;
+ul{
+    background-color: rgb(170, 167, 167);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: 680px;
+    overflow: auto;
 }
 
-.horinav{
-    background-color: gray;
-    color: white;
-    font-size: 15px;
+p{text-indent: 50px
+    ;text-align: left;
 }
 
-span:hover{
-    color: rgb(137, 221, 137);
-}
 li:hover{
-    color: rgb(137, 221, 137);
+    color: rgb(184, 230, 184);
 }
 
-.leftnav{
-    width: 25%;
-    padding-left: 15px;
-    margin-left: 15px;
-    float: left;
-    font-style: italic;
-    background-color: lightgray;
-    height: 500px;
-    font-size: 20px;
-    overflow:auto;
-    list-style-type: none;
-    
-}
-
-right{
-    position: relative;
-    width: 25%;
-    padding-left: 15px;
-    margin-left: 15px;
-    float: right;
-    font-style: italic;
-    background-color: lightgray;
-    height: 500px;
-}
-
-
-
-li{
-    font-size: 15px;
-    margin: 5px;
-    color:black;
-}
 
 div.footer{
 
