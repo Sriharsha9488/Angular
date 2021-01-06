@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Java Script practice
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <style>
+            .bggreen{
+                background-color: green;
+                text-shadow: hotpink;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class = "h1" id = "h1">Practice</h1>
+        <table class ="table1" id = 'table1'>
+            <tr>
+                <th>name</th>
+                <th>age</th>
+                <th>date</th>
+            </tr>
+            <tr>
+                <td>siva</td>
+                <td>24</td>
+                <td>27</td>
+            </tr>
+            <tr>
+                <td>sanka</td>
+                <td>200</td>
+                <td>30</td>
+            </tr>
+        </table>
+
+        <div class = "h1" id ="div" style = "display: none;">hey there</div>
+
+        <label>First Name :</label>
+        <input id = "firstname" class = "name" name = "fname" style = "margin-bottom: 5px;" placeholder="Enter first name"/>
+        <br>
+
+        <label>last Name :</label>
+        <input id = "lastname" class = "name" placeholder="Enter last name"/>
+        <br>
+
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>  
+        <input type="radio" id="male" name="gender" value="others">
+        <label for="others">Others</label><br>
+
+        <label>Select Education :</label>
+        <select id="education" name="education">
+            <option value="select">SELECT</option>
+            <option value="BTECH">BTECH </option>
+            <option value="Bcom">BSC</option>
+            <option value="java">MSC</option>
+        </select>
+        <br>
+        
+        <label>1st year : <input type="checkbox" id="check"></label><br>
+        <label>2nd year : <input type="checkbox" id="check"></label><br>
+        <label>3rd year : <input type="checkbox" id="check"></label>
+        <br>
+        <input type="submit" class="btn btn-info" value="Submit">
+            
+
+        <br>
+
+
+    </body>
+
+    <script type="text/javascript">
+       console.log( document.getElementById("h1"))    // get elemenet by id
+
+       console.log(  document.getElementsByClassName("name"))  //get element by class 
+
+       console.log( document.getElementsByTagName("td"))        //get element by tag
+
+       console.log($("[name = 'fname']"))                       //get element by attr
+
+       console.log( document.getElementById("h1").innerHTML)    //get element by html content
+
+       console.log( document.getElementById("table1").textContent)  // get element by text content
+
+       $("#div").html("<i>hello</i>")   // change html content
+
+       $("#h1").text("Practice1")       // change text content
+
+       console.log($("#firstname").val()) // get element value
+     
+       $("#lastname").val("fixed")      // change element value
+
+       $("#lastname").hide()     // show element
+ 
+       $("#div").show()        // hide element
+
+       $("#div").addClass("bggreen") // add a class
+
+       $("#div").removeClass("h1") // remove class
+
+       $("[type='radio']").val() //value of the radio button.
+
+        $("[type='male']").val("gents")  //change the value of the selected type.
+
+        $("[value='BE']").val() //this value changed but the value doesn't show. It will show undefined.
+
+        $("[id='check']").val() //get the element in checkbox.
+
+        $("[id='check']").val("single") //change the value in checkbox.
+
+
+
+
+
+
+
+
+      
+    </script>
+</html>
