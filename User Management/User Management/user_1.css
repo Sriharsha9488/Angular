@@ -1,0 +1,66 @@
+.navbar-header {
+    float: right !important;
+    margin-top: 20px;
+    font-size: 20px;
+}
+b{
+    font-size: 32px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 20px;
+    background-color: white;
+    padding-top: 10px;
+
+}
+.form-group{
+    font-size: 15px;
+
+}
+.navbar-header{
+    background-color: white;
+}
+button{
+    background-color: rgb(8, 235, 46);
+    border-radius: 5px;
+}
+button:hover {
+    background-color: rgb(98, 134, 233);
+}
+.loginPage button{
+    background-color: rgb(70, 212, 27);
+    margin-left: 50%;
+    font-size: 22px;
+}
+.loginPage button:hover{
+    background-color: rgb(98, 134, 233);
+}
+.pageContent{
+    margin-top:70px !important;
+    margin:20px;
+}   
+.pageNavigation {
+    position: fixed;
+    width:100%;
+    z-index:1; 
+    top: 0px;
+    margin: 0px;
+}     
+.hide{
+    display:none;
+}  
+.col-md-12 #firstName_error,
+.col-md-12 #lastName_error,
+.col-md-12 #email_error,
+.col-md-12 #password_error,
+.col-md-12 #ConfirmPassword_error,
+.col-md-12 #age_error
+{
+    margin-top: 5px;
+    width: 300px;
+    font-size: 15px;
+    color:red;
+    background-color: salmon;
+    padding: 5px 8px;
+    border-radius: 3px;
+    border: 1px solid rgb(229, 138, 138);
+    display: none;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="user_1.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>User Management</title>
+</head>
+
+<body>
+    <div class="row pageNavigation">
+        <div class="col-md-12">
+            <b> USER MANAGEMENT DETAILS</b>
+                    <div class="navbar-header" >
+                        
+                        <button class="btn btn-md btn-succcess loginLink active">LOGIN</button>
+                        <button class="btn btn-md btn-succcess createAccountLink">CreateAccount</button>
+                    </div>
+        </div>
+    </div>
+    <div class="jumbotron jumbotron-fluid">
+    <div class="pageContent">
+        <div class="row pages loginPage">
+            <div class="col-md-12">
+                <div class="container">
+                <form>
+                    <h2>Login Form</h2>
+                    <br>
+                    <div class="form-group">
+                        <label for="loginEmail">Email address</label>
+                        <input type="email" class="form-control" id="loginEmail" name="email" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Password</label>
+                        <input type="password" class="form-control" name="password" id="loginPassword" placeholder="Password">
+                    </div>
+                    <button type="button" class="btn btn-primary login" onclick="login()">Login</button>
+                </form>
+            </div>
+            </div>
+        </div>
+        <div class="row pages createAccountPage hide">
+            <div class="col-md-12">
+                <div class="container">
+                <form name="createform" onsubmit="return validated()" method="POST">
+                    <h2>Account Creating Form</h2>
+                    <br>
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter First Name">
+                        <div id="firstName_error">Please fill up your firstName</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter Last Name">
+                        <div id="lastName_error">Please fill up your lastName</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Enter email">
+                        <div id="email_error">Please fill up your email</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" name="password" id="password" placeholder="Password"/>
+                        <div id="password_error">Please Enter your password</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm_password">ConfirmPassword </label>
+                        <input type="password" class="form-control" name="ConfirmPassword" id="confirm_password" onblur="checkPass();" placeholder="confirm_password"/>
+                        <div id="ConfirmPassword_error">Please Enter your ConfirmPassword</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Age</label>
+                        <input type="number" class="form-control" name="age" id="age" placeholder="Enter Your Age">
+                        <div id="age_error">Please Enter your age</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                <label for="gender">Gender:</label><br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label><br>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label><br>  
+                        <input type="radio" id="male" name="gender" value="others">
+                        <label for="others">Others</label><br>
+                        <label>FavoriteHero :</label>
+                        <select id="FavoriteHero" name="FavoriteHero">
+                            <option value="select">SELECT</option>
+                            <option value="Rajini">Rajini </option>
+                            <option value="Kamal">Kamal</option>
+                            <option value="Vijay">Vijay</option>
+                            <option value="Ajith">Ajith</option>
+                        </select><br>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label" for="admin">Are you Admin Yes/No </label>
+                        <input class="form-check-input admin" type="checkbox" id="admin" value="Admin">
+                        
+                    </div>
+                    <button type="submit" class="btn btn-primary createAccount">CreateAccount</button>
+                </form>
+            </div>
+            </div>
+    </div>
+
+
+</div>
+
+    <script src="user_1.js"> </script>
+</body>
+
+</html>
