@@ -11,17 +11,19 @@
     <div class="row pageNavigation">
         <div class="col-md-12">
             <b> USER MANAGEMENT DETAILS</b>
-                    <div class="navbar-header">
+                    <div class="navbar-header" >
                         
-                        <button class="loginLink active">LOGIN</button>
-                        <button class="createAccountLink">CreateAccount</button>
+                        <button class="btn btn-md btn-succcess loginLink active">LOGIN</button>
+                        <button class="btn btn-md btn-succcess createAccountLink">CreateAccount</button>
                         <button class="logoutLink hide" onclick="logout()"> Logout</a></button>
                     </div>
         </div>
     </div>
+    <div class="jumbotron jumbotron-fluid">
     <div class="pageContent">
         <div class="row pages loginPage">
             <div class="col-md-12">
+                <div class="container">
                 <form>
                     <h2>Login Form</h2>
                     <br>
@@ -36,9 +38,11 @@
                     <button type="button" class="btn btn-primary login" onclick="login()">Login</button>
                 </form>
             </div>
+            </div>
         </div>
         <div class="row pages createAccountPage hide">
             <div class="col-md-12">
+                <div class="container">
                 <form name="createform" onsubmit="return validated()" method="POST">
                     <h2>Account Creating Form</h2>
                     <br>
@@ -97,6 +101,7 @@
                     </div>
                     <button type="submit" class="btn btn-primary createAccount">CreateAccount</button>
                 </form>
+            </div>
             </div>
 
         <div class="row pages homePage hide">
@@ -162,6 +167,7 @@
             </div>
         </div>
     </div>
+</div>
 
     <script src="userman.js"> </script>
 </body>
